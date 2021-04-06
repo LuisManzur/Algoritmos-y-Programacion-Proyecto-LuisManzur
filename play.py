@@ -58,19 +58,15 @@ def play(rooms, lct, player, partidas): #funcion donde se realizaran todo el mai
                 partida = {'jugador': player.username, 'tiempo': tiempo/60}
                 partidas.append(partida)
                 time.sleep(8)
-                
+            
                 break
             if tiempo1 <= tiempo: # verifica si se te acabo el tiempo
                 print('\nSe te ha acabado el tiempo')
-                match = {'partida': 'Perdida', 'Tiempo': tiempo}
-                matches  = player.matches
-                matches.append(match)
+                time.sleep(5)
                 break
             if vidas <= 0:
                 print('\nse te han acabado las vidas')
-                match = {'partida': 'Perdida', 'Tiempo': tiempo}
-                matches  = player.matches
-                matches.append(match)
+                time.sleep(5)
             if primera == 'si':
                 print(f'\n\nBienvenido {player.avatar}, gracias por tu disposición a ayudarnos a resolver este inconveniente, te encuentras actualmente ubicado en la biblioteca, revisa el menú de opciones para ver qué acciones puedes realizar. Recuerda que el tiempo corre más rápido que un trimestre en este reto.')
                 time.sleep(8)
