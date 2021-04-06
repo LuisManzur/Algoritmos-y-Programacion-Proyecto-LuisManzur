@@ -146,8 +146,6 @@ def start_game(players, rooms, partidas):# funcion previa a iniciar el juego don
                 if not login(players, rooms, partidas): # se llama a la funcion parainiciar sesion, si la funcion retorna false se imprime un mensaje de error
                     print('Usuario o contraseña incorrecto.')
                     time.sleep(1)
-                else:
-                    print('El usuario o contraseña es invalido.')
             elif o == '2':
                 players.append(new_player(players)) #se llama a lafuncion para crear un nuevo perfil y se agregan a la lista de jugadores
             elif o == '3': # se rompe el ciclo y se regresa al main. 

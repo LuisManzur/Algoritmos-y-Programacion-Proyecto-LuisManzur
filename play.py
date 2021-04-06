@@ -67,6 +67,7 @@ def play(rooms, lct, player, partidas): #funcion donde se realizaran todo el mai
             if vidas <= 0:
                 print('\nse te han acabado las vidas')
                 time.sleep(5)
+                break
             if primera == 'si':
                 print(f'\n\nBienvenido {player.avatar}, gracias por tu disposición a ayudarnos a resolver este inconveniente, te encuentras actualmente ubicado en la biblioteca, revisa el menú de opciones para ver qué acciones puedes realizar. Recuerda que el tiempo corre más rápido que un trimestre en este reto.')
                 time.sleep(8)
